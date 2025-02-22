@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import useGeminiAPI from '../../hooks/useGeminiAPI';
+import useGeminiAPI from '../../hooks/useGeminiApi';
 import ChatInput from '../ChatInput/ChatInput';
 import botAvatar from '../../assets/bot-avatar.png';
 import './Chatbot.css';

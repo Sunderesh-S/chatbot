@@ -5,8 +5,7 @@ import personalContext from "../data/personalContext.json"
 const useGeminiAPI = () => {
 	const [loading, setLoading] = useState(false); // Loading state
 	const [error, setError] = useState(null); // Error state
-	// const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-	const API_KEY = "AIzaSyBiowkfSxnLdy4f6iRSAC0HqVQcp0Epf50";
+	const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 	const genAI = new GoogleGenerativeAI(API_KEY);
 
 	const getResponse = async (input) => {
