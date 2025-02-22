@@ -22,6 +22,8 @@ const Chatbot = () => {
     }, [messages]);
 
     const handleSubmit = async (input) => {
+        if(!input.trim())
+            return;
         // Add user message to the chat
         setMessages((prevMessages) => [
             ...prevMessages,

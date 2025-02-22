@@ -2,6 +2,8 @@
 
 A simple React-based chatbot that uses the Gemini API to provide personalized responses. The chatbot is designed to answer questions about you (e.g., your background, experience, hobbies) based on a predefined context.
 
+Try it here: https://chatbot-bay-theta.vercel.app/
+
 ---
 
 ## Getting Started
@@ -16,8 +18,8 @@ A simple React-based chatbot that uses the Gemini API to provide personalized re
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/Sunderesh-S/chatbot.git
+   cd chatbot
    ```
 
 2. **Install Dependencies**:

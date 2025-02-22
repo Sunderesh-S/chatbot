@@ -31,4 +31,6 @@ body {
   align-items: center;
   min-height: 100dvh;
   background-color: var(--secondary-color);
+  box-sizing: border-box;
+  padding: var(--padding);
 }
