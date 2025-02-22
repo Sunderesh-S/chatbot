@@ -55,14 +55,13 @@ const Chatbot = () => {
 
     return (
         <div className="chatbot-container">
-            <h1 className="chatbot-heading">About Me Chatbot</h1>
+            <h1 className="chatbot-heading">Bio Buddy</h1>
             <div className="chatbot-response" ref={chatContainerRef}>
                 {renderMessages()}
                 {loading && (
                     <div className="message bot">
                         <img src={botAvatar} alt="Bot Avatar" className="bot-avatar" />
                         <div className="message-bubble">
-                            <div className="loading-response"></div>
                             <div className="loading-response"></div>
                             <div className="loading-response"></div>
                         </div>

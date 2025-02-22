@@ -1,21 +1,27 @@
 .chatbot-container {
 	box-sizing: border-box;
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
-	height: 100vh;
+	height: 100dvh;
 	display: flex;
 	flex-direction: column;
-	background-color: #fff;
 	box-shadow: var(--shadow);
-	border-radius: var(--border-radius);
+	border-radius: 0px;
 	overflow: hidden;
+}
+
+/* Media query for laptops/desktops */
+@media (min-width: 768px) {
+	.chatbot-container {
+		width: 80%;
+		border-radius: var(--border-radius);
+	}
 }
 
 .chatbot-heading {
 	font-size: var(--heading-font-size);
 	padding: var(--padding);
-	background-color: var(--primary-color);
-	color: #fff;
+	color: var(--primary-color);
 	text-align: center;
 	margin: 0;
 	font-weight: 600;
@@ -44,7 +50,7 @@
 
 .message-bubble {
 	max-width: 70%;
-	padding: 12px 16px;
+	padding: 8px 12px;
 	border-radius: var(--border-radius);
 	font-size: var(--font-size);
 	line-height: 1.5;
@@ -60,22 +66,25 @@
 	background-color: var(--chat-bubble-bot);
 	color: var(--text-color);
 	border: 1px solid var(--border-color);
-	margin-left: 50px;
+	margin-left: 20px;
 }
 
 .bot-avatar {
-	width: 36px;
-	height: 36px;
+	width: 25px;
+	height: 25px;
 	border-radius: 50%;
 	margin-right: 12px;
 	border: 2px solid var(--primary-color);
+	object-fit: cover;
 }
 
 .loading-response {
 	width: 100%;
 	min-width: 200px;
 	height: 20px;
-	background-color: var(--loading-color);
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: shimmer 1.5s infinite;
 	border-radius: var(--border-radius);
 	margin-bottom: 10px;
 }
@@ -91,4 +100,38 @@
 	border: 1px solid var(--error-border);
 	border-radius: var(--border-radius);
 	color: var(--error-text);
+}
+
+.chatbot-response::-webkit-scrollbar {
+	width: 8px;
+}
+
+.chatbot-response::-webkit-scrollbar-track {
+	background: var(--secondary-color);
+	border-radius: 4px;
+}
+
+.chatbot-response::-webkit-scrollbar-thumb {
+	background: var(--primary-color);
+	border-radius: 4px;
+	border: 2px solid var(--secondary-color);
+}
+
+.chatbot-response::-webkit-scrollbar-thumb:hover {
+	background: #5a4fcf;
+}
+
+.chatbot-response {
+	scrollbar-width: thin;
+	scrollbar-color: var(--primary-color) var(--secondary-color);
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: 200% 0;
+	}
+
+	100% {
+		background-position: -200% 0;
+	}
 }

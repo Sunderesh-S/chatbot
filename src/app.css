@@ -1,20 +1,20 @@
 :root {
-  --primary-color: #6c5ce7; /* Premium purple for accents */
-  --secondary-color: #f8f9fa; /* Light background */
-  --text-color: #2d3436; /* Dark text */
-  --border-color: #dfe6e9; /* Light border */
-  --border-radius: 12px; /* Rounded corners */
-  --padding: 16px; /* Consistent padding */
-  --margin: 20px; /* Consistent margin */
-  --font-size: 16px; /* Base font size */
-  --heading-font-size: 24px; /* Larger font for headings */
-  --chat-bubble-user: var(--primary-color); /* User message bubble color */
-  --chat-bubble-bot: #ffffff; /* Bot message bubble color */
-  --loading-color: #f0f0f0; /* Loading response color */
-  --error-bg: #ffebee; /* Error background */
-  --error-border: #ffcdd2; /* Error border */
-  --error-text: #c62828; /* Error text */
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  --primary-color: #4d6bfe;
+  --secondary-color: #f8f9fa;
+  --text-color: #2d3436; 
+  --border-color: #dfe6e9;
+  --border-radius: 12px; 
+  --padding: 8px;
+  --margin: 20px;
+  --font-size: 16px;
+  --heading-font-size: 24px;
+  --chat-bubble-user: var(--primary-color);
+  --chat-bubble-bot: #ffffff;
+  --loading-color: #f0f0f0;
+  --error-bg: #ffebee;
+  --error-border: #ffcdd2;
+  --error-text: #c62828;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -29,6 +29,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100dvh;
   background-color: var(--secondary-color);
 }

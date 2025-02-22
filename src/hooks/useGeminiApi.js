@@ -3,8 +3,8 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 import personalContext from "../data/personalContext.json"
 
 const useGeminiAPI = () => {
-	const [loading, setLoading] = useState(false); // Loading state
-	const [error, setError] = useState(null); // Error state
+	const [loading, setLoading] = useState(false); 
+	const [error, setError] = useState(null); 
 	const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 	const genAI = new GoogleGenerativeAI(API_KEY);
 
@@ -31,7 +31,6 @@ const useGeminiAPI = () => {
 		}
 	};
 
-	// Return loading and error states
 	return { getResponse, loading, error };
 };
 
